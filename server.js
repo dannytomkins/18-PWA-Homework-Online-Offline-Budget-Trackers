@@ -17,9 +17,9 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
-  //added per mongoatlas instructions
+  //added useUnifiedTopology: true per mongoatlas instructions
   useUnifiedTopology: true,
-  //added per mongoatlas instructions
+  //added useCreateIndex: true per mongoatlas instructions
   useCreateIndex: true,
   useFindAndModify: false
 });
